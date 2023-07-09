@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 5000px;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(#EEEEEE, #068FFF, #146C94, black, black);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(30deg, rgb(233, 231, 149) ,#1eabec, #566ada);
+  background-size: 300%;
+  animation: colors 10s ease infinite;
+}
+
+@keyframes colors {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.sol {
+  width: 150px;
+  height: 150px;
+  border-bottom-right-radius: 80%;  
+  background-image: repeating-radial-gradient(farthest-corner at 0px 0px, darkorange 30%, yellow 60%);
+  z-index: 5;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.onda {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(../img/onda.png);
+  background-size: 1000px 100px;  
+  animation: ondaAnimada 5s ease-in-out infinite alternate;
+}
+
+@keyframes ondaAnimada {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(10px);
+  }  
+}
+
+#onda1 {
+  z-index: 999;
+  opacity: 1;
+  background-position-x: 50px;
+}
+
+#onda2 {
+  z-index: 998;
+  opacity: 0.5;
+  background-position-x: 150px;
+}
+
+#onda3 {
+  z-index: 1001;
+  opacity: 0.2;
+  background-position-x: 250px;
+}
+
+#onda4 {
+  z-index: 997;
+  opacity: 0.8;
+  background-position-x: 350px;
+}
+
+
+
+
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+section img {
+  max-width: auto;
+  max-height: auto;
+  width: 70%;
+  height: auto;
+  transition: opacity 0.5s;
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+}
+
+.lupa {
+  display: flex;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+

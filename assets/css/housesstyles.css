@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: cover;
+}
+
+.casas {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.patrick-casa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50vh;
+  left: 50vh;
+  height: 40vh;
+  width: 40vh;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.patrick-casa:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dd1d5713;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.bob-casa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+  left: 180vh;
+  height: 70vh;
+  width: 45vh;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.bob-casa:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eeea0915;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.lula-casa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1vh;
+  left: 105vh;
+  height: 90vh;
+  width: 55vh;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.lula-casa:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2009ee15;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+
+.lula {
+  display: none;
+  width: 40vh;
+  height: auto;
+}
+
+.lula-show {
+  display: flex;
+  width: 40vh;
+  height: auto;
+  border-radius: 50%;
+}
+
+.patrick {
+  display: none;
+  width: 20vh;
+  height: auto;
+}
+
+.patrick-show {
+  display: flex;
+  width: 20vh;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.bob {
+  display: none;
+  width: 30vh;
+  height: auto;
+}
+
+.bob-show {
+  display: flex;
+  width: 30vh;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+
+
+.house {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
